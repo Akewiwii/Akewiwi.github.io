@@ -1,0 +1,224 @@
+:root {
+    --blanco1: #fefcff;
+    --colorFondo: #ffa0cd;
+    --colorBotones1: #ffe0ef;
+    --colorBotones2: #fe7cbc;
+}
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+body{
+    background-color: #e24d97;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+#paginas{
+    background-color: #e24d97;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: -60px;
+    margin: auto;
+}
+#pagina1{
+    width: 250px;
+    height: auto;
+    background-color: var(--colorFondo);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;    
+    border-radius: 30px;
+    border: 2px solid black;
+    position: relative;
+    left: 90px;
+    top: 45px;
+    overflow: hidden;
+}
+#barra {
+    width: 100%;
+    padding: 8px;
+    background-color: var(--blanco1);
+}
+#profile-image {
+    width: 85%;
+    min-width: 150px;
+    height: auto;
+    border-radius: 100%;
+    border: solid 2px rgb(54, 54, 54);
+    margin-top: 8%;
+}
+#menu-text {
+    background: linear-gradient(125deg,var(--colorBotones1) 0%, var(--colorBotones2) 25%, var(--colorBotones1) 50%, var(--colorBotones2) 85%, var(--colorBotones1) 100%);
+    width: 180px;
+    height: 50px;
+    font-family: "Press Start 2P", system-ui;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    color: var(--blanco1);
+    border-radius: 100px;
+    border: solid 2px rgb(54, 54, 54);
+    text-align: center;
+    display: flex;
+    margin-top: 5%;
+}
+#text-menu {
+    margin: auto;
+}
+hr {
+    width: 75%;
+    min-width: 150px;
+    height: 4px;
+    border-radius: 200px;
+    background-color: var(--blanco1);
+    margin: 25px 0px 18px 0px;
+    border: 0px solid transparent;
+}
+#botones {
+    width: 100%;
+    padding-bottom: 30px;
+}
+ul {
+    width: 80%;
+    min-width: 180px;
+    list-style-type: none;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 24px;
+    text-align: left;
+    color: #fe7cbc;
+}
+li {
+    background-color: var(--colorBotones1);
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+li:hover {
+    color: #e04c98;
+}
+.arrow-small {
+    width: 15px;
+    height: auto;
+}
+.big-icons {
+    width: 44px;
+    height: auto;
+}
+.big-icons2 {
+    width: 70px;
+    height: auto;
+}
+.big-icons3 {
+    width: 60px;
+    height: auto;
+}
+#pagina2 {
+    width:48%;
+    min-width: 300px;
+    height: 500px;
+    background: linear-gradient(360deg, var(--colorBotones1) 0%, var(--colorBotones1) 88%, var(--colorBotones2) 88%);
+    border-radius: 30px;
+    border: 2px solid black;
+
+}
+#barra2 {
+    width: 100%;
+    padding: 13px;
+
+    display: flex;
+    justify-content: right;
+}
+#box-move {
+    width:  70%;
+    height: auto;
+    background-color: var(--blanco1);
+    margin-left: 25%;
+    margin-top: 5%;
+    border-radius: 20px;
+    border: 2px solid rgb(54, 54, 54);
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 40px 5px var(--colorBotones2);
+    align-items: center;
+}
+#text-move {
+    width: auto;
+    font-family: "Permanent Marker", cursive;
+    color: var(--blanco1);
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    font-size: 28px;
+    padding: 4px;
+    margin-top: 2%;
+    text-align: center;
+    background: linear-gradient(360deg,gray 0%, var(--blanco1) 35% );
+    border-radius: 20px;
+    border: 2px solid rgb(54, 54, 54);
+}
+#text-main {
+    font-family: "Press Start 2P", system-ui;
+    font-size: 16px;
+    font-weight: lighter;
+    text-align: left;
+    padding: 10px;
+    
+}
+.color-icon {
+    width:250px;
+    height: auto;
+    color: var(--blanco1);
+}
+#botones-move {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: -30px;
+    margin-left: 190px;
+    z-index: 2000;
+}
+button {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    border: 2px solid black;
+    margin-right: 15px;
+    cursor: pointer;
+    background: linear-gradient(var(--colorBotones1)0%, var(--colorBotones2)90% );
+}
+
+@media only screen and (max-width: 768px) {
+    #paginas {
+        margin-top: 200px;
+        left: -85px;
+    }
+    #pagina1 {
+        width: 185px;
+        z-index: 20;
+    }
+    #pagina2 {
+        width:70%;
+        min-width: 430px;
+        height: 500px;
+        position: relative;
+        left:-10px;
+    }
+    #barra2{
+        padding: 5px;
+    }
+    #box-move {
+        width:  68%;
+        min-width: 250px;
+        margin-left: 130px;
+    }
+    button {
+        cursor: pointer;
+    }
+    #botones-move {
+        margin-left: 50px;
+    }
+}

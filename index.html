@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</head>
+<body>
+
+    <div id="paginas">
+        <div id="pagina1">
+        <div id="barra">
+            <box-icon name='circle' type='solid' color='#ffa0cd' ></box-icon>
+            <box-icon name='circle' type='solid' color='#fa63b0' ></box-icon>
+            <box-icon name='circle' type='solid' color='#ec58a4' ></box-icon>
+        </div>
+        <img id="profile-image" src="imgs/IMG_8031.jpg" alt="">        <div id="menu-text">
+            <p id="text-menu">MENU!</p>
+        </div>
+        <hr>
+        <div id="botones">                
+            <ul>
+                <li class="hoverText">
+                    About Me
+                </li>
+                <li class="hoverText">
+                    Rules
+                </li>
+                <li class="hoverText">
+                    Social 
+                </li>
+            </ul>
+        </div>    
+
+        </div>        
+        <div id="pagina2">
+        <div id="barra2">
+            <box-icon class="big-icons" name='minus' type='solid' color='white'></box-icon>
+            <box-icon class="big-icons" name='square' color='white' ></box-icon>
+            <box-icon class="big-icons" name='x' type='solid' color='white'></box-icon>
+        </div>
+        <div id="box-move">
+            <div id="text-move">
+                <p>About Me</p>
+            </div>
+            <p id="text-main"><!-- Donde esta el texto de lorem ipsum, ahi va tu texto (osea abajo)-->
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga in quia libero iste? Ab, magni corporis und
+            </p>
+        </div>
+            <div id="botones-move">
+                <button onclick="cambioDeEstado(-1)">
+                    <box-icon class="big-icons2"type='solid' color='#fefcff'name='chevrons-left'></box-icon ></button>
+                <button>
+                    <box-icon class="big-icons3" name='heart' type='solid' color='#fefcff' ></box-icon>
+                </button>
+                <button onclick="cambioDeEstado(1)">
+                    <box-icon class="big-icons2" color='#fefcff' type='solid' name='chevrons-right'></box-icon>
+                </button>
+            </div>
+    </div>
+
+    </div>
+
+    </div>
+   <script src="js/scripts.js"></script>      
+</body>
+
+</html>
